@@ -11,7 +11,7 @@ class HomeController extends AbstractController
     public function number() : Response
     {
       $number = rand(0, 100);
-      return $this->render('base.html.twig', [
+      return $this->render('index.html.twig', [
                 'number' => $number,
       ]);
     }
